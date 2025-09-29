@@ -45,7 +45,7 @@ public class LauncherSwing extends JFrame {
     private String installedVersion = null;
 
     public LauncherSwing() {
-        setTitle("Launcher NotaPedidos");
+        setTitle("Launcher Gyaplast");
         setSize(400, 150);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -91,10 +91,6 @@ public class LauncherSwing extends JFrame {
         try {
             updateStatus("Buscando actualización...");
             boolean jarExists = new java.io.File(appJar).exists();
-
-            String tester = getJarTxtVersion("app/app-gyaplast-javafx.jar");
-
-            System.out.println(tester);
             
             if (jarExists) {
                 installedVersion = getJarTxtVersion(appJar);

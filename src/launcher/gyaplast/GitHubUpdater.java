@@ -15,8 +15,8 @@ import org.json.JSONObject;
  * @author NOTEJUAN
  */
 public class GitHubUpdater {
-    // 1.0.0
-    private static final String API_URL = "https://api.github.com/repos/Desarrollador-LELLA/launcher-pedidos/releases/latest";
+    // 0.1.3
+    private static final String API_URL = "https://api.github.com/repos/Desarrollador-LELLA/launcher-gyaplast/releases/latest";
     private static String latestDownloadUrl = null;
 
     public static String fetchLatestVersion() {

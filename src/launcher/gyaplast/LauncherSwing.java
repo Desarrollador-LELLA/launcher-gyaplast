@@ -95,11 +95,9 @@ public class LauncherSwing extends JFrame {
             String tester = getJarTxtVersion("app/app-gyaplast-javafx.jar");
 
             System.out.println(tester);
-
-            //String tester2 = getJarManifestVersion(appJar);
-            //System.out.println(tester2);
+            
             if (jarExists) {
-                installedVersion = getJarManifestVersion(appJar);
+                installedVersion = getJarTxtVersion(appJar);
             }
 
             String latestVersion = GitHubUpdater.fetchLatestVersion();
